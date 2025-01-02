@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ASHIKA BADDAM</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Ashika Baddam</a>
+		  
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <!-- <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li> -->
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+
+	  <section id="home-section" class="hero">
+		<div class="home-slider owl-carousel">
+		  <div class="slider-item">
+			<div class="overlay"></div>
+			<div class="container">
+			  <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+				
+				<!-- Image Container -->
+				<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/Ashikapic.jpg); background-size: 500px 500px; background-position: right ; background-repeat: no-repeat;">
+				  <div class="overlay"></div>
+				</div>
+	  
+				<!-- Text Container -->
+				<div class="one-forth d-flex flex-column align-items-start justify-content-center ftco-animate" data-scrollax="properties: { translateY: '70%' }">
+				
+					
+					<div class="text ">
+						<span class="subheading" style="margin-top: 50px;">Hello!</span>
+
+						<br> </br>
+						
+
+					<h1 class="mb-4 mt-3">I'm <span>Ashika Baddam</span></h1>
+	  
+					<!-- Element to contain animated typing -->
+					<span id="typing-animation"></span>
+					<p style="color: white;"> </p>
+					<p style="color: white;">Skilled full-stack Java developer with a strong background in building robust and scalable applications across diverse industries, including healthcare, insurance, and e-commerce.</p>
+					
+					
+	  
+					<script>
+					  // Initialize the typing animation
+					  const typingAnimationElement = document.getElementById('typing-animation');
+	  
+					  // Create an array of typing text
+					  const typingTexts = [
+						'Software Engineer ',
+						'FullStack Java Developer   ',
+					  ];
+	  
+					  // Create a function to display the typing animation for a given text
+					  function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+						  setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+						  }, i * 200); // Increase the delay to slow down the typing animation
+						}
+	  
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+						  typingAnimationElement.textContent = '';
+						  playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+					  }
+	  
+					  // Start the typing animation loop
+					  playTypingAnimation(typingTexts[0]);
+
+					  
+
+					</script>
+					
+	  
+					<br></br>
+					<br></br>
+				  </div>
+				</div>
+				
+			  </div>
+			</div>
+		  </div>
+		</div>
+
+		<br> </br>
+		<br> </br>
+		
+
+	  </section>
+	  
+
+
+
+
+	  
+	 <!-- <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/a3.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Ashika Baddam</span></h1>
+
+						// Element to contain animated typing 
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Software Engineer ',
+						'Java Developer   ',
+						
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			           
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>-->
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/a7.jpg" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p>&nbsp;</p>
+
+										<p><span class="title-s">Name: </span> <span>Ashika Baddam</span></p>
+										<!--<p><span class="title-s">Job Role: </span> <span>Senior Data Analyst</span></p>-->
+										<p><span class="title-s">Experience: </span> <span>8+ Years</span></p>
+										<!-- <p><span class="title-s">Address: </span> <span>Saint Louis, Missouri</span></p> -->
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s skills-title">Skills</p>
+									<span>Java</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>SQL(PostgreSQL, Oracle DB, MySQL)</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>NoSQL(MongoDB, Cassandra)</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>React JS</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>Angular</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>Node JS</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Kafka <span class="pull-right">65%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>AWS and Azure</span> <span class="pull-right">92%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 92%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+
+									</div>
+
+
+									<span>GitHub <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+
+									<span>Agile <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>With extensive hands-on experience as a Full-stack Java Developer, I have built robust full-stack web applications, developed scalable cloud solutions, and created responsive front-end interfaces using Angular and React frameworks. My expertise spans the development of RESTful services with Java 17/11/8 and Spring Boot, implementing secure authentication and authorization protocols like Spring Security and OAuth2, and leveraging asynchronous communication with messaging queues such as RabbitMQ and Apache Kafka. I have utilized relational databases like Oracle DB, PostgreSQL and MySQL, as well as NoSQL solutions such as MongoDB and Cassandra, to deliver efficient and scalable data storage. Proficient in deploying applications on cloud platforms like AWS and Microsoft Azure. By incorporating CI/CD pipelines with tools like Jenkins, I have improved software release cycles and automated deployments.              
+								</p>
+								<p>Developed a deep understanding of agile methodologies, including Scrum and Kanban, and employ Test-Driven Development (TDD) principles to ensure high-quality deliverables. My strong collaboration skills and experience with tools like GitHub, GitLab, and Bitbucket support effective team workflows and project management. Passionate about solving complex challenges, I continuously leverage emerging technologies to deliver innovative and impactful solutions that align with client goals.
+								</p>
+								
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+								<span>&nbsp; Find Me On</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/ashika-baddam/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+           <!-- <p>2</p>-->
+          </div>
+        </div>
+
+		
+
+		<div class="row">
+			<h1 class="big-4 experience-title">Experience</h1>
+			<div class="underline"></div>
+
+			<!--h1 class="big-4">Experience</h1>
+			<div class="underline"></div>-->
+		</div>
+		
+		
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">September 2023 - Present</span>
+						<h2>FullStack Java Developer</h2>
+						<span class="position">CGI</span>
+						<!--p class="mt-4">Merkle, a leading CXM and media company with over 10K+ professionals globally. It's a part of Dentsu International. -->
+							<!-- <ul>
+								<li>Built reusable UI elements using ReactJS with functional components, React Hooks, and Router, enabling real-time updates and seamless navigation.
+								</li>
+								<li>Created dynamic forms and modal dialogs in React for real-time inventory updates and shipment tracking, enhancing user engagement.
+								</li>
+								<li>Designed backend services in Java 17 and Spring Boot with RESTful APIs, ensuring scalable claim management and seamless system communication.
+								</li>
+								<li>Implemented Spring Security for role-based access control and @ControllerAdvice for robust error handling, improving security and fault tolerance.
+								</li>
+								<li>Optimized database operations with Spring Data JPA, Microsoft SQL Server, and PostgreSQL, ensuring fast and reliable claim and payment processing.
+								</li>
+								<li>Integrated Kafka for real-time updates and deployed scalable services on AWS EC2 with RDS, leveraging cloud resilience and automated backups.
+								</li>
+								<li>Followed Agile methods with TDD, using GitLab CI for automated testing and deployments, and Bitbucket for collaborative version control.
+								</li>
+							</ul> -->
+						<!--/p>-->
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">July 2021- Auguest 2023</span>
+						<h2>Java FullStack Developer</h2>
+						<span class="position">Yash Technologies Pvt Ltd.</span>
+						<!--p class="mt-4">iQuanti is a data-driven digital marketing analytics and solutions company, helps top 100 global brands. -->
+							<!-- <ul>
+								<li>Built a user-friendly, responsive interface using Angular, enabling efficient submission and management of insurance claims across devices.
+								</li>
+								<li>Utilized Angular services, RxJS, and lazy loading to enable dynamic updates, improve performance, and enhance user engagement.
+								</li>
+								<li>Developed Spring Boot RESTful APIs for scalable communication with the database and external services, ensuring seamless integration and maintainability.
+								</li>
+								<li>Implemented Spring Security for secure authentication and authorization and integrated external logistics systems to extend platform functionality.
+								</li>
+								<li>Used Kafka for fault-tolerant, real-time data streaming and PostgreSQL for consistent, reliable storage of inventory and shipment records.
+								</li>
+								<li>Deployed on Microsoft Azure with App Services and Blob Storage while automating build and deployment pipelines using Jenkins for reliable releases.
+
+								</li>
+								<li>Followed Agile practices for iterative releases and used JUnit with Jenkins for automated testing, ensuring early issue detection and faster delivery cycles.</li>
+							</ul> -->
+						<!--/p>-->
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Jan 2020 - June 2021</span>
+						<h2>FullStack Developer</h2>
+						<span class="position">Hobby Lobby</span>
+						<!--p class="mt-4">iQuanti is a data-driven digital marketing analytics and solutions company, helps top 100 global brands. -->
+							<!-- <ul>
+								<li>Built responsive web pages with React.js, using Hooks, Context API, and Router for dynamic updates and seamless navigation across devices.
+								</li>
+								<li>Designed a modular backend with Java 8 and Spring Boot, implementing RESTful APIs for real-time data exchange and streamlined functionalities like order management.
+								</li>
+								<li>Utilized MySQL for structured data and MongoDB for unstructured data, ensuring optimized performance, integrity, and scalability for diverse storage needs.
+								</li>
+								<li>Deployed on AWS using EC2, S3, and RDS, leveraging Jenkins for automated CI/CD pipelines to ensure reliable, efficient, and scalable application delivery.
+								</li>
+								<li>Adopted Agile with Kanban, using TDD principles and JUnit for robust testing, ensuring high-quality releases through continuous collaboration and feedback.
+								</li>
+							</ul> -->
+						<!--/p>-->
+					</div>
+
+				</div>
+
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">April 2018 - December 2019</span>
+						<h2>Java/J2EE Developer</h2>
+						<span class="position">Ambient Clinical Analytics</span>
+						<!--p class="mt-4">iQuanti is a data-driven digital marketing analytics and solutions company, helps top 100 global brands. -->
+							<!-- <ul>
+								<li>Built a responsive UI with HTML5, CSS3, and JavaScript, enabling seamless schedule and leave management for healthcare administrators across devices.
+								</li>
+								<li>Developed backend features with Java 8 , servlets and created RESTful APIs using Spring Boot for scalable, efficient communication between system modules.
+								</li>
+								<li>Used PostgreSQL for structured data like schedules and attendance, and MongoDB for unstructured logs, ensuring robust, scalable storage and query performance.
+								</li>
+								<li>Deployed the system on AWS EC2 and S3 for high availability and secure backups, leveraging Jenkins to automate testing, builds, and deployments.
+								</li>
+								<li>Followed Agile methodology with iterative sprints, using JUnit & TestNG for automated testing to ensure reliable features and quick adaptation to feedback.
+								</li>
+							</ul> -->
+						<!--/p>-->
+					</div>
+
+				</div>
+
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">April 2016 - March 2018</span>
+						<h2>Software Engineer Intern</h2>
+						<span class="position">TechTree IT Systems Pvt Ltd</span>
+						<!--p class="mt-4">iQuanti is a data-driven digital marketing analytics and solutions company, helps top 100 global brands. -->
+							<!-- <ul>
+								<li>Completed a 3-month intensive training at the Infosys campus in Mysore, gaining expertise in technologies such as Java, Python, C, JavaScript, MySQL, Oracle PL/SQL, HTML, CSS, Spring Boot, as well as methodologies like Agile and Waterfall.</li>
+								<li>Collaborated with senior engineers to design, code, and test software applications using Java, JavaScript, HTML, CSS, and Spring Boot, focusing on developing high-quality, scalable, and maintainable code.</li>
+								<li>Maintained thorough documentation of code, design, and testing activities to ensure accuracy and accessibility for team members.</li>
+								<li>Adapted quickly to new technologies like Machine Learning and Artificial Intelligence, and learned programming languages such as MySQL, Oracle, and PL/SQL, along with various technologies like Git, Jenkins, and microservices, applying this new knowledge effectively to ongoing projects.</li>
+								<li>Applied Agile and Waterfall methodologies in software development, gaining hands-on experience with both approaches.</li>
+							</ul> -->
+						<!--/p>-->
+					</div>
+
+				</div>
+
+
+
+
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+
+		<div class="row" style="display: flex; justify-content: center; align-items: center; ">
+			<div class="col-md-6">
+				<div class="resume-wrap ftco-animate" style="text-align: center;">
+					<span class="date">Aug 2023 - Dec 2024</span>
+					<h2>Masters</h2>
+					<span class="position">Saint Louis University</span>
+					<p class="mt-4">Grade: First class distinction.</p>
+				</div>
+			</div>
+		</div>
+		
+		
+			<!-- <div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">Aug 2023 - Dec 2024</span>
+    					<h2>Masters</h2>
+    					<span class="position">Saint Louis University</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+    			</div>
+
+    			<!-- <div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">June 2016 - Aug 2020</span>
+    					<h2>Bachlor of Technology</h2>
+    					<span class="position">Mahatma Gandhi University</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+				</div> -->
+    		</div> -->
+
+    		<!--div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>-->
+    	</div>
+    </section>
+
+   
+
+    <!-- <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are some of my projects.</p>
+          </div>
+        </div> -->
+		<!--Start-->
+		
+
+
+		<!--End-->
+
+
+
+        <!-- <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a  class="block-20 zoom-effect" style="background-image: url('images/cgi.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a>Insurance Claims Processing System</a></h3>
+                <p>Built a web-based system for quick insurance claim submission, tracking, and approval. For both users and insurance companies, the system enabled automatic payment processing, secure document management, and real-time updates.
+				</p>
+				
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a  class="block-20 zoom-effect" style="background-image: url('images/yash.jpeg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a >Intelligent Supply Chain Management</a></h3>
+                	
+				<p>This project focuses on creating an intelligent platform to help businesses efficiently track inventory, shipments, and optimize supply chain operations using predictive analytics. The platform provides real-time inventory monitoring, restocking alerts, and shipment tracking.
+					</p>
+					
+					
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href class="block-20 zoom-effect" style="background-image: url('images/hobby.jpeg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href>E-Commerce Order Processing System</a></h3>
+                <p>The E-Commerce Order Processing System was created to help a retail customer effectively handle online orders, payments, and product information. The order flow was made more efficient by the platform, which also guaranteed accurate processing, payment verification, and inventory updates. 
+				</p> -->
+
+				
+              </div>
+            </div>
+
+
+
+		
+
+
+			
+			
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		
+			  </div>
+			</div>
+			
+			  </div>
+			</div>
+		 </div>
+	  </div>
+    </section>
+
+
+
+	<style>
+		.custom-icon-color {
+		  color: #FF5733; /* Replace with your logo color */
+		}
+		.contact-section {
+		  display: flex;
+		  flex-wrap: wrap;
+		  justify-content: space-between;
+		  gap: 20px;
+		}
+		.left-side {
+		  flex: 1;
+		  min-width: 300px;
+		  display: flex;
+		  flex-direction: row;
+		  gap: 20px;
+		}
+		.box {
+		  margin-bottom: 20px;
+		  flex: 1;
+		}
+		form .form-group {
+		  margin-bottom: 15px;
+		}
+	  </style>
+	  
+	  <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+		<div class="container">
+		  <div class="row justify-content-center mb-5 pb-3">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+			  <h1 class="big big-2">Contact</h1>
+			  <h2 class="mb-4">Contact Me</h2>
+			  <p>Below are the details to reach out to me!</p>
+			</div>
+		  </div>
+	  
+		  <div class="contact-section">
+			<!-- Left Side: Contact Info -->
+			<div class="left-side">
+			  <div class="box p-4 text-center">
+				<div class="icon d-flex align-items-center justify-content-center custom-icon-color">
+				  <span class="icon-phone2"></span>
+				</div>
+				<h3 class="mb-4">Contact Number</h3>
+				<p><a href="tel://6363318255">+1 (314)502-9118  </a></p>
+			  </div>
+			  <div class="box p-4 text-center">
+				<div class="icon d-flex align-items-center justify-content-center custom-icon-color">
+				  <span class="icon-paper-plane"></span>
+				</div>
+				<h3 class="mb-4">Email Address</h3>
+				<p><a href="mailto://baddamashika001@gmail.com">ashikabaddam@gmail.com</a></p>
+			  </div>
+			</div>
+	  
+			<!-- Right Side: Form -->
+			<div class="right-side">
+			  <form action="https://formsubmit.co/ashikabaddam@gmail.com" method="POST">
+				<div class="form-group">
+				  <label for="name">Name</label>
+				  <input type="text" id="name" name="name" class="form-control" required>
+				</div>
+				<div class="form-group">
+				  <label for="contact">Contact Number</label>
+				  <input type="tel" id="contact" name="contact" class="form-control" required>
+				</div>
+				<div class="form-group">
+				  <label for="email">Email Address</label>
+				  <input type="email" id="email" name="email" class="form-control" required>
+				</div>
+				<div class="form-group text-center">
+				  <button type="submit" class="btn btn-primary">Submit</button>
+				</div>
+			  </form>
+			</div>
+		  </div>
+	  
+		  <div class="container">
+			<br><br>
+			<div class="row justify-content-center">
+			  <div class="col-md-7 ftco-animate text-center">
+			  </div>
+			</div>
+			<br>
+			<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+			  <li class="ftco-animate normal-txt">Find me on</li>
+			  <li class="ftco-animate"><a href="https://www.linkedin.com/in/ashika-baddam/"><span class="icon-linkedin"></span></a></li>
+			</ul>
+			<br>
+		  </div>
+		</div>
+	  </section>
+	  
+
+	
+		
+
+
+
+	
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved by Ashika Baddam <a href="https://colorlib.com" target="_blank"></a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
